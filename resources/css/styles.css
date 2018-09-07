@@ -29,17 +29,72 @@ html {
 	margin: 0 auto; /* center content*/
 }
 
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
 /* ------- HEADINGS --------*/
 
-h1 {    
-    color: #fff;
-    font-size: 240%;
-    font-weight: 300;
-    letter-spacing: 1px;
+h1, h2, h3 {    
+    
+    font-weight: 300;      
+    text-transform: uppercase;    
+}
+
+h1 {
     margin-bottom: 20px;
     margin-top: 0;
-    text-transform: uppercase;
+    color: #fff;
+    font-size: 240%;
     word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: "";
+    width: 10%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* ------ PARAGRAPHS ------ */
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%
+}
+
+/* ------ ICONS ------ */
+.icon-big {
+    font-size:300%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;    
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%
 }
 
 /* ------- BUTTONS --------*/
@@ -131,7 +186,7 @@ header {
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent;
-    transition: border-bottom 0.7;
+    transition: border-bottom .7s;
 }
 
 .main-nav li a:hover,
