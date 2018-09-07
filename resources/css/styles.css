@@ -6,8 +6,7 @@
 
 /*  Basic styling 
 	============================================================= */ 
-html,
-body {
+html {
 	background-color: #fff;
 	color: #555;
 	font-family: 'Lato', 'Arial', sans-serif;
@@ -20,4 +19,20 @@ body {
 .row {
 	max-width: 1140px;  /* fixed width for all rows */
 	margin: 0 auto; /* center content*/
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%); /* Centers content half of width and height up to the top and left*/
 }
