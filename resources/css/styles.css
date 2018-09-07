@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*  Basic styling 
+	============================================================= */ 
+html,
+body {
+	background-color: #fff;
+	color: #555;
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	/* Renders text clean */
+	text-rendering: optimizeLegibility;	
+}
+
+.row {
+	max-width: 1140px;  /* fixed width for all rows */
+	margin: 0 auto; /* center content*/
+}
