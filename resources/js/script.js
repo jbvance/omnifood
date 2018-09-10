@@ -60,5 +60,43 @@ $(document).ready(function () {
                 }
             }
         });
+
+        // Animations on scroll
+        let waypoint1 = new Waypoint({
+            element: $('.js--wp-1'),
+            handler: function (direction) {
+                console.log(this.element)
+               $(this.element).addClass('animated fadeIn')
+            },
+            offset: '50%'
+        })
+
+        
+        let waypoint2 = new Waypoint({
+            element: $('.js--wp-2'),
+            handler: function (direction) {
+                console.log(this.element)
+               $(this.element).addClass('animated fadeInUp')
+            },
+            offset: '50%'
+        })
+        
+        let waypoint3 = new Waypoint({
+            element: $('.js--wp-3'),
+            handler: function (direction) {
+                console.log(this.element)
+               $(this.element).addClass('animated fadeIn')
+            },
+            offset: '50%'
+        })
+
+        let waypoint4 = new Waypoint({
+            element: $('.js--wp-4'),
+            handler: function (direction) {
+                console.log(this.element)
+               $(this.element).addClass('animated pulse')
+            },
+            offset: '50%'
+        })
 })
 
