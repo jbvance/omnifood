@@ -243,12 +243,30 @@ header {
     transition: border-bottom .7s;
 }
 
+
+
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
 }
 
-.sticky .main-nav { margin-top: 18px; }
+/* mobile nav */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display:none;
+}
+
+.ion-icon-menu {
+    font-size: 200%;
+    color: #fff;
+}
+
+.ion-icon-close {
+    font-size: 200%;
+    color: #fff;
+}
 
 /* Sticky nav */
 .sticky {
@@ -261,7 +279,7 @@ header {
     z-index: 9999;
 }
 
-.main-nav { margin-top: 18px; }
+.sticky .main-nav { margin-top: 18px; }
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {

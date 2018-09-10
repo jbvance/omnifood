@@ -3,8 +3,7 @@ $(document).ready(function () {
     // Sticky  Navigation
     let waypoint = new Waypoint({
         element: document.getElementsByClassName('js--section-features')[0],
-        handler: function (direction) {
-            //console.log('Scrolled to waypoint!')
+        handler: function (direction) {        
             if (direction === 'down') {
                 $('nav').addClass('sticky')
             } else {
@@ -64,8 +63,7 @@ $(document).ready(function () {
         // Animations on scroll
         let waypoint1 = new Waypoint({
             element: $('.js--wp-1'),
-            handler: function (direction) {
-                console.log(this.element)
+            handler: function (direction) {              
                $(this.element).addClass('animated fadeIn')
             },
             offset: '50%'
@@ -74,8 +72,7 @@ $(document).ready(function () {
         
         let waypoint2 = new Waypoint({
             element: $('.js--wp-2'),
-            handler: function (direction) {
-                console.log(this.element)
+            handler: function (direction) {               
                $(this.element).addClass('animated fadeInUp')
             },
             offset: '50%'
@@ -83,8 +80,7 @@ $(document).ready(function () {
         
         let waypoint3 = new Waypoint({
             element: $('.js--wp-3'),
-            handler: function (direction) {
-                console.log(this.element)
+            handler: function (direction) {            
                $(this.element).addClass('animated fadeIn')
             },
             offset: '50%'
@@ -92,11 +88,23 @@ $(document).ready(function () {
 
         let waypoint4 = new Waypoint({
             element: $('.js--wp-4'),
-            handler: function (direction) {
-                console.log(this.element)
+            handler: function (direction) {  
                $(this.element).addClass('animated pulse')
             },
             offset: '50%'
+        })
+
+        // Mobile nav
+        $('.js--nav-icon').click(function() {
+            let nav = $('.js--main-nav')
+            let icon = $('.js--nav-icon')
+
+            nav.slideToggle(200)
+            if (icon.attr('name') === 'menu') {
+                icon.attr('name', 'close')                
+            } else {
+                icon.attr('name', 'menu')
+            }
         })
 })
 
